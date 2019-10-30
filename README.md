@@ -48,6 +48,39 @@ MultipleCall.getInstance()
 
 
 > 本项目在 [jinyb09017](https://github.com/jinyb09017/delayActionDemo) 大大的基础上完善
->- 增加了容错处理
->- 补充了嵌套 Call 的情况
+> - 增加了容错处理
+> - 补充了嵌套 Call 的情况
+
+### 更新
+
+以上全部内容来自原代码仓库：https://github.com/feelschaotic/DelayAction。
+
+本人 fork 之后所做修改：
+
+1. 将 build.gradle 文件中的 compile 更新为 implementation
+2. 打包成第三方库。
+
+#### 使用配置
+
+1. 项目的根目录的 build.gradle 的 repositories 最后添加
+
+```groovy
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+
+2. 添加依赖
+
+```groovy
+dependencies {
+  implementation 'com.github.CherryLover:DelayAction:lastVersion'
+}
+```
+
+[![](https://jitpack.io/v/CherryLover/DelayAction.svg)](https://jitpack.io/#CherryLover/DelayAction)
+
 
